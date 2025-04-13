@@ -1,0 +1,23 @@
+
+@keyframes cartIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.food-item{
+    width: 20%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000015;
+    transition: 0.3s;
+    animation: CartIn 1s;
+}
+.food-item-img{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}

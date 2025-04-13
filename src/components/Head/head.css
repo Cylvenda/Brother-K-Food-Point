@@ -1,0 +1,78 @@
+
+.head{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/bk_pg.jpg') no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 5rem;
+}
+.head-content{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    gap: 1.5vw;
+    max-width: 50%;
+    animation: fadeIn 3s;
+    h2{
+        font-weight: 500;
+        font-size: max(4vw, 22px);
+    }
+    p{
+        font-size: 1vw;
+    }
+    button{
+        border: none;
+        color: black;
+        font-weight: 500;
+        padding: 1vw 2.3vw;
+        background-color: white;
+        font-size: max(1vw, 13px);
+        border-radius: 30px;
+    }
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .head{
+        padding: 20px;
+        height: 13rem;
+        border-radius: 10px;
+        display: flex;
+    }
+    .head-content{
+        max-width: 65%;
+        h2{
+            font-size: 23px;
+        }
+        p{
+            display: none;
+        }
+        button{
+            font-size: 13px;
+            padding: 10px;
+        }
+    }
+}
+@media only screen and (max-width: 1050){
+    .head{
+        padding: 20px;
+        height: 19rem;
+        display: flex;
+    }
+    .head-content{
+        max-width: 45%;
+    }
+    p{
+        font-size: 19px;
+    }
+}

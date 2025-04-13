@@ -1,0 +1,199 @@
+header {
+    width: 100%;
+    height: 4rem;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .show-menu {
+        position: absolute;
+        top: 100%;
+        font-weight: 600;
+        background-color: rgb(204, 172, 165);
+        width: 17rem;
+        border-radius: 5px;
+
+        ul li {
+            padding: 15px;
+            border-bottom: 1px solid white;
+            transition: 1.5s;
+        }
+
+        ul li:hover {
+            margin-left: .5rem;
+        }
+    }
+}
+
+header .brand {
+    font-weight: 700;
+}
+
+header .link ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header .link ul li a {
+    color: black;
+    font-weight: 600;
+    transition: 1s ease-in-out all;
+}
+
+header .link ul li a:hover {
+    color: red;
+    border-bottom: 2px solid black;
+}
+
+header .link ul .active {
+    border-bottom: 2px solid tomato;
+}
+
+header .btn {
+    display: flex;
+    gap: 40px;
+
+    .cart-number {
+        text-align: center;
+        position: absolute;
+        top: 6px;
+        font-weight: 800;
+        font-size: 11px;
+        color: white;
+        background-color: black;
+        padding: 03px 3px 3px 3px;
+        border-radius: 3px;
+    }
+
+    button {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        border: none;
+        font-weight: 400;
+        transition: 1.5s ease;
+    }
+
+    button:hover {
+        background-color: rgb(214, 203, 203);
+    }
+
+
+
+    .btn-form {
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+        font-weight: 400;
+    }
+
+    .btn-profile {
+        border-radius: 10px;
+
+        img {
+            height: inherit;
+            width: inherit;
+        }
+    }
+
+    .drop-down-menu {
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        width: 12rem;
+        padding: 10px;
+        right: 1rem;
+        border-radius: 15px 0 15px 15px;
+    }
+
+    .drop-down-menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin: 1rem 0 0 .4rem;
+    }
+
+    .drop-down-menu li {
+        line-height: 40px;
+        padding: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .drop-down-menu .drop-content {
+        position: relative;
+        top: -10px;
+        margin-left: 5px;
+    }
+
+    .drop-down-menu img {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .drop-down-menu .btn-profile {
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .drop-down-menu button{
+        margin: 0;
+        padding: 0;
+        height: inherit;
+        width: inherit;
+        background-color: inherit;
+    }
+    .drop-down-menu button:hover{
+        background-color: inherit;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    header .link {
+        display: none;
+    }
+
+    header .btn {
+        gap: 22px;
+
+        button {
+            padding: 10px;
+            width: 8rem;
+        }
+    }
+
+    header .brand {
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .drop-down-menu img {
+        width: inherit;
+        height: inherit;
+    }
+}
