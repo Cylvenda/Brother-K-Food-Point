@@ -5,7 +5,7 @@ import './productcss.css'
 
 const Product = ({ category }) => {
 
-  const { food } = useContext(StoreContext)
+  const { food, cartItems } = useContext(StoreContext)
 
   return (
     <div className='food-display'>

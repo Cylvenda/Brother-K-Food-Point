@@ -11,7 +11,7 @@ function Navbar({ setShowLogin }) {
 
     const navigate = useNavigate();
 
-    const { /* getTotalCartQuantity,*/ token, setToken } = useContext(StoreContext);
+    const { cartItems, token, setToken } = useContext(StoreContext);
 
     // Logout function
     const handleLogout = () => {
@@ -53,10 +53,7 @@ function Navbar({ setShowLogin }) {
                 <button className="btn-profile">
                     <Link to="/Cart">
                         <img src={assets.cart} alt="cart" />
-                        <span className="cart-number">
-                            10
-                            {/* {getTotalCartQuantity() > 0 ? getTotalCartQuantity() : "00"} */}
-                        </span>
+                       {!cartItems ? "": <span className="cart-number">.</span> }
                     </Link>
                 </button>
 
