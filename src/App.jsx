@@ -9,6 +9,8 @@ import Footer from './components/Footer/Footer';
 import Order from './pages/Order/Order';
 import Profile from './pages/Profile/Profile';
 import { ToastContainer } from 'react-toastify';
+import Verify from './pages/Verify/verify';
+import MyOrders from './pages/MyOrders/MyOrders';
 
 function App() {
 
@@ -24,7 +26,8 @@ function App() {
         <Route path='/Cart' element={<Cart />} />
         <Route path='/Order' element={<Order />} />
         <Route path='/Profile' element={<Profile />} />
-        <Route path='*' element={<Error />} />
+        <Route path='/Verify' element={<Verify />} />
+        <Route path='MyOrders' element={<MyOrders />} />
       </Routes>
       <Footer />
     </>

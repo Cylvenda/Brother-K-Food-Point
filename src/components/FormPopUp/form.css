@@ -9,7 +9,7 @@
     .login-form-container {
         place-self: center;
         width: max(23vw, 330px);
-        color: #808080;
+        color: black;
         background-color: white;
         flex-direction: column;
         gap: 25px;
@@ -42,7 +42,7 @@
 
         input {
             outline: none;
-            border: 1px solid #c9c9c9;
+            border: 1px solid black;
             padding: 10px;
             border-radius: 4px;
         }
@@ -53,7 +53,7 @@
         padding: 10px;
         border-radius: 4px;
         color: white;
-        background-color: tomato;
+        background-color: red;
         font-size: 15px;
         cursor: pointer;
         width: 100%;
@@ -75,7 +75,7 @@
         margin-top: 1rem;
 
         span {
-            color: tomato;
+            color: red;
             font-weight: 500;
             cursor: pointer;
         }

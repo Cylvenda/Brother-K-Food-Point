@@ -76,7 +76,7 @@ function Navbar({ setShowLogin }) {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/About">
+                                        <Link to="/MyOrders">
                                             <img src={assets.order} alt="Orders Icon" />
                                             <span className="drop-content">Orders</span>
                                         </Link>

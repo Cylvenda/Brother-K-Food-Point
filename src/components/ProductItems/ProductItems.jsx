@@ -3,9 +3,9 @@ import './product.css'
 import { assets } from '../../assets/assets'
 import { StoreContext } from '../context/StoreContextProvider'
 
-const ProductItems = ({ id, name, image, price, description, category }) => {
+const ProductItems = ({ id, name, image, price, description }) => {
 
-    const { food, cartItems, setcartItems, addToCart, removeFromCart, URL } = useContext(StoreContext);
+    const { cartItems, addToCart, removeFromCart, URL } = useContext(StoreContext);
 
     return (
         <div>
@@ -26,7 +26,7 @@ const ProductItems = ({ id, name, image, price, description, category }) => {
                         }
 
                     </div>
-                    {/* <p className="food-item-desc">{description}</p> */}
+                    <p className="food-item-desc">{description}</p>
                     <p className="food-item-price">Tsh {(price).toLocaleString()}</p>
                 </div>
 
