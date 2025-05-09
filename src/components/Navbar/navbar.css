@@ -169,7 +169,6 @@ header .btn {
 
 }
 
-
 @media only screen and (max-width: 600px) {
     header {
         flex-wrap: nowrap;
